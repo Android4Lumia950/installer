@@ -104,7 +104,7 @@ REM Flashing recovery and modem images
 %~dp0bin\fastboot flash modem "%~dp0DATA\modem.img"
 
 echo Rebooting to recovery
-%~dp0bin\fastboot reboot recovery
+%~dp0bin\fastboot oem reboot-recovery
 
 echo Press any key when in recovery...
 pause
@@ -122,3 +122,4 @@ pause
 %~dp0bin\adb reboot
 
 echo Booting Android...
+
